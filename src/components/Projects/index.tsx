@@ -1,49 +1,35 @@
 "use client"; // যদি তুমি app directory ব্যবহার করো
-import Image from "next/image";
-import Link from "next/link";
-
+import { BiCodeAlt } from "react-icons/bi";
+import { FaDatabase } from "react-icons/fa";
+import {
+  SiDocker,
+  SiMongodb,
+  SiMongoose,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiRedux,
+} from "react-icons/si";
+import ProjectCard from "./ProjectCard";
+const techTags = [
+  { name: "Redux", color: "text-purple-400", icon: <SiRedux /> },
+  { name: "Next.js", color: "text-gray-300", icon: <SiNextdotjs /> },
+  { name: "DBMS", color: "text-pink-300", icon: <FaDatabase /> },
+  { name: "SQL", color: "text-blue-400", icon: <BiCodeAlt /> },
+  { name: "PostgreSQL", color: "text-blue-300", icon: <SiPostgresql /> },
+  { name: "Prisma", color: "text-purple-300", icon: <SiPrisma /> },
+  { name: "MongoDB", color: "text-green-400", icon: <SiMongodb /> },
+  { name: "Mongoose", color: "text-red-400", icon: <SiMongoose /> },
+  { name: "Docker", color: "text-blue-500", icon: <SiDocker /> },
+];
 const portfolioData = [
   {
-    title: "Candle",
-    description: "Creative Candle Light",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
-  },
-  {
-    title: "Paint",
-    description: "Creative wall painting",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
-  },
-  {
-    title: "UI/UX Sample",
-    description: "UI/UX Sample design mockup",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
-  },
-  {
-    title: "Packet",
-    description: "Packet design mockup",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
-  },
-  {
-    title: "Packet",
-    description: "Another packet design mockup",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
-  },
-  {
-    title: "Cream",
-    description: "Creative cream box design",
-    image:
-      "https://i.ibb.co.com/cckQKz8h/fexoral-120-mg-tablet-38755786903-i1-smc-Xg-Ex4f23c-Bnx-AW6t4.webp",
-    link: "https://dribbble.com",
+    id: "1",
+    title: "💊 MediMart – Medicine E-Commerce Platform",
+    description:
+      "MediMart is a full-featured medicine e-commerce platform that enables users to securely browse, search, and purchase medicines online. It includes role-based access for customers and admins, secure authentication, prescription verification, order tracking, and a responsive shopping experience.",
+    image: "https://i.ibb.co.com/fY71wzvP/image.png",
+    link: "https://medi-mart-night.vercel.app/",
   },
 ];
 
@@ -64,7 +50,7 @@ export default function MyWork() {
         </div>
 
         {/* Filters */}
-        <div className="portfolio-filters flex flex-wrap justify-center gap-4">
+        {/* <div className="portfolio-filters flex flex-wrap justify-center gap-4">
           {["All", "UI/UX Design", "Html & Css", "React Js", "Node Js"].map(
             (filter) => (
               <button
@@ -78,49 +64,36 @@ export default function MyWork() {
               </button>
             )
           )}
+        </div> */}
+        <div className="p-4 overflow-x-hidden whitespace-nowrap rounded-md text-center relative">
+          <div className="animate-slide inline-block">
+            {techTags.map((tag, index) => (
+              <button
+                key={index}
+                className={`inline-flex items-center justify-center m-1 px-4 py-2 rounded-md border border-gray-700 bg-[#1a1a2e] hover:bg-[#2a2a40] transition text-sm ${tag.color}`}
+              >
+                <span className="text-lg mx-1">{tag.icon}</span>
+                {tag.name}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Portfolio Items */}
         <div className="mt-12 grid grid-cols-6 gap-7">
-          {portfolioData.map((item, index) => (
-            <div key={index} className="col-span-6 sm:col-span-3 lg:col-span-2">
-              <div className="portfolio card hovercard group p-4 md:p-5">
-                <div className="portfolio-top relative overflow-hidden">
-                  <div className="portfolio-image fiximage blur-0 filter transition-all duration-500 group-hover:blur">
-                    <Image
-                      alt={item.title}
-                      src={item?.image}
-                      width={550}
-                      height={384}
-                      style={{ color: "transparent" }}
-                      className="w-full h-auto"
-                    />
-                  </div>
-                  <div className="portfolio-hovercontent absolute left-0 top-0 z-20 flex h-full w-full -translate-x-full transform items-center justify-center gap-4 overflow-hidden bg-grey bg-opacity-80 transition-all duration-500 group-hover:translate-x-0">
-                    <Link
-                      href={item.link}
-                      target="_blank"
-                      className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-teal-500 p-0 text-lg text-grey"
-                    >
-                      🔗
-                    </Link>
-                  </div>
-                </div>
-                <div className="portfolio-content mt-4">
-                  <h5 className="mb-0">{item.title}</h5>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+            {portfolioData.map((item, index) => (
+              <ProjectCard item={item} key={index} />
+            ))}
+          </div>
         </div>
 
         {/* Load More Button */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button className="btn btn-small">
             <span>Load More</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date();
   return (
-    <footer className="p-16 text-gray-100 bg-gray-900  rounded">
+    <footer className="p-16 text-gray-100 bg-[#081029]  rounded">
       <nav className="mt-8">
         <div className="flex justify-center gap-4">
           <Link
@@ -57,7 +57,7 @@ const Footer = () => {
       <aside className="mt-8 text-center">
         <p className="text-gray-400">
           Copyright &copy; {currentYear.getFullYear()} - All right reserved by
-          PH Next Level Team
+          Mohammad Shakib
         </p>
       </aside>
     </footer>

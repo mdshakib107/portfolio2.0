@@ -12,16 +12,16 @@ const HeroSection = () => {
     // Initialize Typed when the component mounts
     if (typedElement.current) {
       new Typed(typedElement.current, {
-        strings: ["Shakib", "Developer", "Designer", "Freelancer"],
-        typeSpeed: 500,
-        backSpeed: 400,
+        strings: ["Shakib", "MERN Stack Developer"],
+        typeSpeed: 80,
+        backSpeed: 50,
         loop: true,
       });
     }
   }, []); // Empty dependency array to run only once when the component mounts
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white px-4">
+    <section className="relative min-h-screen flex items-center justify-center bg-[#081029] text-white px-4">
       <div className="text-center max-w-2xl">
         {/* Profile Image */}
         <div className="herosection-imagewrapper relative mb-5 inline-block overflow-hidden rounded-full align-middle">

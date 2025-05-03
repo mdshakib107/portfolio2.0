@@ -28,12 +28,17 @@ export default {
           "0%, 100%": { transform: "translateY(0%)" },
           "50%": { transform: "translateY(100%)" },
         },
+        slide: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         ledgerleftright: "ledgerleftright 2s linear infinite",
         ledgerrightleft: "ledgerrightleft 2s linear infinite",
         ledgerbottomtop: "ledgerbottomtop 2s linear infinite",
         ledgertopbottom: "ledgertopbottom 2s linear infinite",
+        slide: "slide 20s linear infinite",
       },
     },
   },

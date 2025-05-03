@@ -1,4 +1,5 @@
 import AboutSection from "@/components/About";
+import Contact from "@/components/Contact/Contact";
 import HeroSection from "@/components/Home";
 import ScrollToTop from "@/components/pages/ScrollTop";
 import MyWork from "@/components/Projects";
@@ -9,15 +10,18 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-gray-900 text-white">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <Resume />
-      <Skills />
-      <MyWork />
-      <Footer />
-      <ScrollToTop />
+    <div className="bg-[#081029] text-white ">
+      <div className=" w-[90%] mx-auto">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <Resume />
+        <Skills />
+        <MyWork />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </div>
     </div>
   );
 }

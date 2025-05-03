@@ -1,14 +1,13 @@
 // components/SkillCard.jsx
+import { Skill } from "@/types";
 import Link from "next/link";
 import { BiCheck } from "react-icons/bi";
 
-const SkillCard = ({ skill }) => {
+const SkillCard = ({ skill }: { skill: Skill }) => {
   return (
-    <div className="bg-gray-950 rounded-lg py-6 shadow-md m-4  hover:shadow-teal-500 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-gray-950 rounded-lg p-4 shadow-md m-4  hover:shadow-teal-500 transition duration-300 ease-in-out transform hover:scale-105">
       {/* Icon */}
-      <div className="flex justify-center mb-4">
-        <img src={skill.icon} alt={skill.name} className="w-12 h-12" />
-      </div>
+      <div className="flex justify-center mb-4">{skill.icon}</div>
 
       {/* Skill Name */}
       <h2 className="text-xl font-bold text-white text-center">{skill.name}</h2>
@@ -23,7 +22,7 @@ const SkillCard = ({ skill }) => {
           href={skill.link}
         >
           <BiCheck className="mr-2" />
-          Learn More
+          View Details
         </Link>
       </div>
     </div>

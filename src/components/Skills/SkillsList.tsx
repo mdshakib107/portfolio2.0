@@ -1,85 +1,98 @@
 // components/SkillsList.jsx
+import {
+  SiCss3,
+  SiExpress,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiMongoose,
+  SiNodedotjs,
+  SiReact,
+  SiReactrouter,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import SkillCard from "./SkillCard";
-
 const SkillsList = () => {
   // Skills List
   const skills = [
     {
       name: "HTML",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+      icon: <SiHtml5 className="text-orange-500 text-4xl" />,
       intro: "A markup language used for creating web pages.",
       link: "/html",
     },
     {
       name: "CSS",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.png",
+      icon: <SiCss3 className="text-blue-500 text-4xl" />,
       intro: "A styling language used for custom designs.",
       link: "/css",
     },
     {
       name: "Tailwind CSS",
-      icon: "https://tailwindcss.com/_next/static/media/logo.0e8c9f8b.png",
+      icon: <SiTailwindcss className="text-sky-400 text-4xl" />,
       intro: "An advanced utility-first styling framework.",
       link: "/tailwind",
     },
     {
       name: "JavaScript",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+      icon: <SiJavascript className="text-yellow-400 text-4xl" />,
       intro: "A programming language used for dynamic web applications.",
       link: "/javascript",
     },
     {
       name: "React",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      icon: <SiReact className="text-cyan-400 text-4xl animate-spin-slow" />,
       intro: "A JavaScript library for building user interfaces.",
       link: "/react",
     },
     {
       name: "React Router DOM",
-      icon: "https://reactrouter.com/web/guides/quick-start/logo.svg",
+      icon: <SiReactrouter className="text-pink-500 text-4xl" />,
       intro: "A routing library for React applications.",
       link: "/react-router",
     },
     {
       name: "Node.js",
-      icon: "https://nodejs.org/static/images/logo.svg",
+      icon: <SiNodedotjs className="text-green-500 text-4xl" />,
       intro: "A JavaScript runtime environment for server-side applications.",
       link: "/node",
     },
     {
       name: "Express.js",
-      icon: "https://expressjs.com/images/express-facebook-share.png",
+      icon: <SiExpress className="text-gray-300 text-4xl" />,
       intro: "A minimal and flexible Node.js web application framework.",
       link: "/express",
     },
     {
       name: "TypeScript",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+      icon: <SiTypescript className="text-blue-400 text-4xl" />,
       intro: "A statically-typed superset of JavaScript.",
       link: "/typescript",
     },
     {
       name: "MongoDB",
-      icon: "https://www.mongodb.com/assets/svg/mongodb-logo.svg",
+      icon: <SiMongodb className="text-green-400 text-4xl" />,
       intro: "A NoSQL database system.",
       link: "/mongodb",
     },
     {
       name: "Mongoose",
-      icon: "https://mongoosejs.com/docs/images/mongoose.png",
+      icon: <SiMongoose className="text-red-400 text-4xl" />,
       intro: "An ODM library for MongoDB.",
       link: "/mongoose",
     },
     {
       name: "Redux",
-      icon: "https://redux.js.org/img/redux-logo.svg",
+      icon: <SiRedux className="text-purple-400 text-4xl" />,
       intro: "A predictable state container for JavaScript apps.",
       link: "/redux",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
       {skills.map((skill, index) => (
         <SkillCard key={index} skill={skill} />
       ))}
