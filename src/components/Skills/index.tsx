@@ -1,3 +1,5 @@
+import SkillsList from "./SkillsList";
+
 const Skills = () => {
   return (
     <div className="resume-section pt-24 lg:pt-28 xl:pt-32">
@@ -32,6 +34,7 @@ const Skills = () => {
             </span>
           </button>
         </div>
+        <SkillsList />
       </div>
     </div>
   );
