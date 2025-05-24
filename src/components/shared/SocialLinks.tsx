@@ -1,4 +1,5 @@
 import { Facebook, Github, Globe, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 const SocialLinks = () => {
   return (
@@ -6,8 +7,8 @@ const SocialLinks = () => {
       {/* GitHub */}
 
       <li className="inline-block align-middle">
-        <a
-          href="https://github.com"
+        <Link
+          href="https://github.com/mdshakib107"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-block h-10 w-10 overflow-hidden border border-gray-500 border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -18,13 +19,13 @@ const SocialLinks = () => {
           <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-teal-500 text-grey transition-all duration-500 group-hover:translate-y-0">
             <Github />
           </span>
-        </a>
+        </Link>
       </li>
 
       {/* Facebook */}
       <li className="inline-block align-middle">
-        <a
-          href="https://facebook.com"
+        <Link
+          href="https://www.facebook.com/stepup.shakib/"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-block h-10 w-10 overflow-hidden border border-gray-500 border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -35,13 +36,13 @@ const SocialLinks = () => {
           <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-teal-500 text-grey transition-all duration-500 group-hover:translate-y-0">
             <Facebook />
           </span>
-        </a>
+        </Link>
       </li>
 
       {/* LinkedIn */}
       <li className="inline-block align-middle">
-        <a
-          href="https://linkedin.com"
+        <Link
+          href="https://www.linkedin.com/in/mohammad-shakib/"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-block h-10 w-10 overflow-hidden border border-gray-500 border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -52,13 +53,13 @@ const SocialLinks = () => {
           <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-teal-500 text-grey transition-all duration-500 group-hover:translate-y-0">
             <Linkedin />
           </span>
-        </a>
+        </Link>
       </li>
 
       {/* Twitter */}
       <li className="inline-block align-middle">
-        <a
-          href="https://twitter.com"
+        <Link
+          href="https://x.com/abu_al_qassam"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-block h-10 w-10 overflow-hidden border border-gray-500 border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -69,13 +70,13 @@ const SocialLinks = () => {
           <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-teal-500 text-grey transition-all duration-500 group-hover:translate-y-0">
             <Twitter />
           </span>
-        </a>
+        </Link>
       </li>
 
       {/* Website */}
       <li className="inline-block align-middle">
-        <a
-          href="https://example.com"
+        <Link
+          href="https://shakib101.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-block h-10 w-10 overflow-hidden border border-gray-500 border-opacity-10 text-center align-middle text-lg leading-none text-body rounded"
@@ -86,7 +87,7 @@ const SocialLinks = () => {
           <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-teal-500 text-grey transition-all duration-500 group-hover:translate-y-0">
             <Globe />
           </span>
-        </a>
+        </Link>
       </li>
     </ul>
   );

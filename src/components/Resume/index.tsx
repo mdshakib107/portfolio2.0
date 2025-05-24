@@ -1,6 +1,8 @@
+import { MapPin } from "lucide-react";
+
 export default function Resume() {
   return (
-    <div className="resume-section pt-24 lg:pt-28 xl:pt-32">
+    <div id="resume" className="resume-section pt-24 lg:pt-28 xl:pt-32">
       <div className="container mx-auto">
         {/* Section Heading */}
         <div className="section-heading relative overflow-hidden pb-14 text-center">
@@ -40,29 +42,7 @@ export default function Resume() {
               <div className="timeline-wrap">
                 <div className="timeline relative block items-start rounded-full border-white border-opacity-20 first:mt-0 md:flex">
                   <span className="timeline-year absolute top-0 left-12 mt-7 mr-12 min-w-[115px] rounded-full bg-teal-500 bg-opacity-10 p-1 text-center text-sm leading-none md:relative md:left-0">
-                    2008 - 2010
-                  </span>
-                  <div className="timeline-right relative border-l-4 border-white border-opacity-20 pt-16 pl-12 md:pt-6">
-                    <span className="absolute -left-0.5 top-0 mt-1 h-full w-0 rounded-full bg-white bg-opacity-20">
-                      <span className="absolute left-0 top-6 z-10 inline-block h-6 w-6 -translate-x-1/2 transform rounded-full border-4 border-white border-opacity-20 bg-grey"></span>
-                      <span className="absolute left-0 right-full top-6 -z-10 mt-2.5 h-1 w-8 translate-x-0 transform rounded-full bg-white bg-opacity-20 md:left-1/2 md:w-20 md:-translate-x-1/2"></span>
-                    </span>
-                    <h5 className="mb-0 text-teal-500">
-                      Higher School Graduation
-                    </h5>
-                    <p className="mb-2 text-heading">Abc College.</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed consectetur donec gravida ullamcorper cum id.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="timeline-wrap">
-                <div className="timeline relative block items-start rounded-full border-white border-opacity-20 first:mt-0 md:flex">
-                  <span className="timeline-year absolute top-0 left-12 mt-7 mr-12 min-w-[115px] rounded-full bg-teal-500 bg-opacity-10 p-1 text-center text-sm leading-none md:relative md:left-0">
-                    2010 - 2014
+                    2018-2022
                   </span>
                   <div className="timeline-right relative border-l-4 border-white border-opacity-20 pt-16 pl-12 md:pt-6">
                     <span className="absolute -left-0.5 top-0 mt-1 h-full w-0 rounded-full bg-white bg-opacity-20">
@@ -70,31 +50,10 @@ export default function Resume() {
                       <span className="absolute left-0 right-full top-6 -z-10 mt-2.5 h-1 w-8 translate-x-0 transform rounded-full bg-white bg-opacity-20 md:left-1/2 md:w-20 md:-translate-x-1/2"></span>
                     </span>
                     <h5 className="mb-0 text-teal-500">Bachelor of Sciences</h5>
-                    <p className="mb-2 text-heading">Def University.</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed consectetur donec gravida ullamcorper cum id.
+                    <p className="mb-2 text-heading">
+                      Green University of Bangladesh
                     </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="timeline-wrap">
-                <div className="timeline relative block items-start rounded-full border-white border-opacity-20 first:mt-0 md:flex">
-                  <span className="timeline-year absolute top-0 left-12 mt-7 mr-12 min-w-[115px] rounded-full bg-teal-500 bg-opacity-10 p-1 text-center text-sm leading-none md:relative md:left-0">
-                    2014 - 2016
-                  </span>
-                  <div className="timeline-right relative border-l-4 border-white border-opacity-20 pt-16 pl-12 md:pt-6">
-                    <span className="absolute -left-0.5 top-0 mt-1 h-full w-0 rounded-full bg-white bg-opacity-20">
-                      <span className="absolute left-0 top-6 z-10 inline-block h-6 w-6 -translate-x-1/2 transform rounded-full border-4 border-white border-opacity-20 bg-grey"></span>
-                      <span className="absolute left-0 right-full top-6 -z-10 mt-2.5 h-1 w-8 translate-x-0 transform rounded-full bg-white bg-opacity-20 md:left-1/2 md:w-20 md:-translate-x-1/2"></span>
-                    </span>
-                    <h5 className="mb-0 text-teal-500">Masters of Sciences</h5>
-                    <p className="mb-2 text-heading">Def University.</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed consectetur donec gravida ullamcorper cum id.
-                    </p>
+                    <p>BSc. in Computer Science and Engineering</p>
                   </div>
                 </div>
               </div>
@@ -122,18 +81,26 @@ export default function Resume() {
               <div className="timeline-wrap">
                 <div className="timeline relative block items-start rounded-full border-white border-opacity-20 first:mt-0 md:flex">
                   <span className="timeline-year absolute top-0 left-12 mt-7 mr-12 min-w-[115px] rounded-full bg-teal-500 bg-opacity-10 p-1 text-center text-sm leading-none md:relative md:left-0">
-                    2015 - 2017
+                    2022
                   </span>
                   <div className="timeline-right relative border-l-4 border-white border-opacity-20 pt-16 pl-12 md:pt-6">
                     <span className="absolute -left-0.5 top-0 mt-1 h-full w-0 rounded-full bg-white bg-opacity-20">
                       <span className="absolute left-0 top-6 z-10 inline-block h-6 w-6 -translate-x-1/2 transform rounded-full border-4 border-white border-opacity-20 bg-grey"></span>
                       <span className="absolute left-0 right-full top-6 -z-10 mt-2.5 h-1 w-8 translate-x-0 transform rounded-full bg-white bg-opacity-20 md:left-1/2 md:w-20 md:-translate-x-1/2"></span>
                     </span>
-                    <h5 className="mb-0 text-teal-500">UI/UX Designer</h5>
-                    <p className="mb-2 text-heading">Abc Company</p>
-                    <p>
+                    <h5 className="mb-0 text-teal-500">
+                      Web Development Intern
+                    </h5>
+                    <p className="mb-2 text-heading">
+                      Odicode Digital Solutions Pvt Ltd
+                    </p>
+                    {/* <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Sed consectetur donec gravida ullamcorper cum id.
+                    </p> */}
+                    <p className="flex">
+                      <MapPin className="inline-block" />
+                      <span>Karnataka, India</span>
                     </p>
                   </div>
                 </div>

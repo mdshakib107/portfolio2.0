@@ -2,7 +2,7 @@ import SkillsList from "./SkillsList";
 
 const Skills = () => {
   return (
-    <div className="resume-section pt-24 lg:pt-28 xl:pt-32">
+    <div id="skills" className="resume-section pt-24 lg:pt-28 xl:pt-32">
       <div className="container mx-auto">
         {/* Section Heading */}
         <div className="section-heading relative overflow-hidden pb-14 text-center">
@@ -20,19 +20,16 @@ const Skills = () => {
           </span>
         </div>
         <div className="flex justify-center item-center">
-          <button className="relative inline-block px-4 py-2 bg-teal-600 text-white rounded-xs overflow-hidden group">
-            <span className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 bg-white" />
-            <span className="relative z-10 group-hover:text-teal-600 transition-colors duration-300">
-              Tech
-            </span>
-          </button>
-
-          <button className=" mx-2 relative inline-block px-4 py-2 bg-teal-600 text-white rounded-xs overflow-hidden group">
-            <span className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 bg-white" />
-            <span className="relative z-10 group-hover:text-teal-600 transition-colors duration-300">
-              Soft
-            </span>
-          </button>
+          <div className="text-center">
+            <button className="inline-flex items-center justify-center m-1 px-4 py-2 rounded-md border border-gray-700 bg-[#1a1a2e] hover:bg-[#2a2a40] transition text-sm">
+              TECH SKILLS
+            </button>
+          </div>
+          <div>
+            <button className="inline-flex items-center justify-center m-1 px-4 py-2 rounded-md border border-gray-700 bg-[#1a1a2e] hover:bg-[#2a2a40] transition text-sm">
+              SOFT SKILLS
+            </button>
+          </div>
         </div>
         <SkillsList />
       </div>

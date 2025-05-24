@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="">
+    <div id="contact" className="mt-10">
       <div className="section-heading relative overflow-hidden pb-14 text-center">
         <h2 className="text-2xl font-semibold relative z-10 mb-2 uppercase">
           Contact Information
@@ -16,7 +16,7 @@ const Contact = () => {
         </span>
       </div>
 
-      <section className="min-h-screen bg-[#081029] text-white flex items-center justify-center p-6">
+      <section className="  text-white flex items-center justify-center p-6">
         <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div>
@@ -27,8 +27,8 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Contact on phone</h4>
-                <p className="text-gray-300 text-sm">+012-3456-7891</p>
-                <p className="text-gray-300 text-sm">+012-3456-7892</p>
+                <p className="text-gray-300 text-sm">+8801838153386</p>
+                {/* <p className="text-gray-300 text-sm">+012-3456-7892</p> */}
               </div>
             </div>
 
@@ -39,8 +39,10 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Contact on mail</h4>
-                <p className="text-gray-300 text-sm">demomail@demo.com</p>
-                <p className="text-gray-300 text-sm">demomail2@demo.com</p>
+                <p className="text-gray-300 text-sm">
+                  mdshakib105100@gmail.com
+                </p>
+                {/* <p className="text-gray-300 text-sm">demomail2@demo.com</p> */}
               </div>
             </div>
 
@@ -52,7 +54,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold">Contact address</h4>
                 <p className="text-gray-300 text-sm">
-                  121 King Street, Melbourne, United States
+                  Khanchon, Narayongang , Bangldesh
                 </p>
               </div>
             </div>

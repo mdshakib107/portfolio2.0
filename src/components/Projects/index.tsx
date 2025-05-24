@@ -1,4 +1,5 @@
 "use client"; // যদি তুমি app directory ব্যবহার করো
+import Link from "next/link";
 import { BiCodeAlt } from "react-icons/bi";
 import { FaDatabase } from "react-icons/fa";
 import {
@@ -35,7 +36,10 @@ const portfolioData = [
 
 export default function MyWork() {
   return (
-    <section className="portfolios-section pt-24 lg:pt-28 xl:pt-32">
+    <section
+      id="projects"
+      className="portfolios-section pt-24 lg:pt-28 xl:pt-32"
+    >
       <div className="container mx-auto">
         <div className="section-heading relative overflow-hidden pb-14 text-center">
           <h2 className="text-2xl font-semibold relative z-10 mb-2 uppercase">
@@ -49,22 +53,14 @@ export default function MyWork() {
           </span>
         </div>
 
-        {/* Filters */}
-        {/* <div className="portfolio-filters flex flex-wrap justify-center gap-4">
-          {["All", "UI/UX Design", "Html & Css", "React Js", "Node Js"].map(
-            (filter) => (
-              <button
-                key={filter}
-                className="relative inline-block px-4 py-1 bg-teal-600 text-white rounded-xs overflow-hidden group"
-              >
-                <span className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 bg-white" />
-                <span className="relative z-10 group-hover:text-teal-600 transition-colors duration-300">
-                  {filter}
-                </span>
-              </button>
-            )
-          )}
-        </div> */}
+        <div className="text-center">
+          <Link
+            href="/projects"
+            className="inline-flex items-center justify-center m-1 px-4 py-2 rounded-md border border-gray-700 bg-[#1a1a2e] hover:bg-[#2a2a40] transition text-sm"
+          >
+            VIEW ALL PROJECTS
+          </Link>
+        </div>
         <div className="p-4 overflow-x-hidden whitespace-nowrap rounded-md text-center relative">
           <div className="animate-slide inline-block">
             {techTags.map((tag, index) => (
