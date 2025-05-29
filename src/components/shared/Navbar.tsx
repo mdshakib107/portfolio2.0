@@ -22,7 +22,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="backdrop-blur-2xl sticky top-0 z-50 ">
+    <div className="backdrop-blur-2xl sticky top-0 z-50 text-gray-100 bg-[#081029] ">
       <nav className="  flex items-center justify-between px-4 py-3 container mx-auto">
         <div className=" text-white flex items-center justify-between w-full md:w-auto">
           <Link href="/" className="text-5xl font-bold text-teal-500">
@@ -63,12 +63,29 @@ const Navbar = () => {
           <div>
             <Link
               href="#contact"
-              className="relative inline-block px-4 py-3 bg-teal-600 text-white rounded-full overflow-hidden group"
+              className="px-4
+            border-1
+     border-[#152a6b]
+      py-2
+      rounded-md
+      text-white
+      font-semibold
+      bg-gradient-to-r
+      from-[#081029]
+      via-[#0b1740]
+      to-[#152a6b]
+      shadow-md
+      hover:from-[#152a6b]
+      hover:via-[#0b1740]
+      hover:to-[#081029]
+      transition-colors
+      duration-300
+      ease-in-out
+      focus:outline-none
+      focus:ring-2
+      focus:ring-cyan-500"
             >
-              <span className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 bg-white"></span>
-              <span className="relative z-10 group-hover:text-teal-600 transition-colors duration-300">
-                Hire Me
-              </span>
+              Hire Me
             </Link>
           </div>
         </div>
@@ -91,12 +108,29 @@ const Navbar = () => {
             <div>
               <Link
                 href="#contact"
-                className="relative inline-block px-4 py-3 bg-teal-600 text-white rounded-full overflow-hidden group"
+                className="px-4
+            border-1
+     border-[#152a6b]
+      py-2
+      rounded-md
+      text-white
+      font-semibold
+      bg-gradient-to-r
+      from-[#081029]
+      via-[#0b1740]
+      to-[#152a6b]
+      shadow-md
+      hover:from-[#152a6b]
+      hover:via-[#0b1740]
+      hover:to-[#081029]
+      transition-colors
+      duration-300
+      ease-in-out
+      focus:outline-none
+      focus:ring-2
+      focus:ring-cyan-500"
               >
-                <span className="absolute inset-0 translate-y-[-100%] group-hover:translate-y-0 transition-transform duration-300 bg-white"></span>
-                <span className="relative z-10 group-hover:text-teal-600 transition-colors duration-300">
-                  Hire Me
-                </span>
+                Hire Me
               </Link>
             </div>
           </div>

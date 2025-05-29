@@ -11,10 +11,13 @@ export interface Blog {
 }
 // types/skill.ts
 export interface Skill {
+  id: number;
   name: string;
   icon: ReactElement;
   intro: string;
   link: string;
+  projects: string[];
+  blogs: string[];
 }
 export interface item {
   id: string;

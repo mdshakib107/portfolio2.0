@@ -1,13 +1,21 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Typed } from "react-typed"; // Correct import
 import SocialLinks from "../shared/SocialLinks";
 
 const HeroSection = () => {
   // Create a ref for the element where Typed.js will be initialized
   const typedElement = useRef(null);
+  const [flipped, setFlipped] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipped((prev) => !prev);
+    }, 4000); // ৪ সেকেন্ড পর পর ফ্লিপ
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     // Initialize Typed when the component mounts
@@ -32,20 +40,23 @@ const HeroSection = () => {
     >
       <div className="text-center ">
         {/* Profile Image */}
-        <div className="herosection-imagewrapper relative mb-5 inline-block overflow-hidden rounded-full align-middle">
-          <span className="herosection-imageanimation absolute left-0 top-0 z-10 h-full w-full animate-spin rounded-full bg-gradient-to-tr from-teal-500 to-transparent"></span>
-          <div className="herosection-image fiximage relative z-20 inline-block  overflow-hidden rounded-full border-3 border-teal-500 border-opacity-10 align-middle">
-            {/* Next.js Image Component */}
+        <div className="relative inline-block rounded-full p-1 perspective-1000">
+          {/* ফ্লিপিং ইমেজ */}
+          <div
+            className="relative rounded-full overflow-hidden border-3 border-teal-500 border-opacity-20 transition-transform duration-700 [transform-style:preserve-3d]"
+            style={{
+              transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
+            }}
+          >
             <Image
-              src="https://i.ibb.co.com/TxVy7jRx/image.png"
-              alt="Mohammad Shakib Profile Picture"
+              src="https://i.ibb.co/TxVy7jRx/image.png"
+              alt="Profile Picture"
               width={300}
               height={300}
-              className="object-cover"
-              loading="lazy"
+              className="object-cover rounded-full"
+              priority
             />
           </div>
-          <span className="absolute inset-0 z-0 animate-spin-slow rounded-full border-4 border-t-teal-500 border-transparent"></span>
         </div>
 
         {/* Heading */}

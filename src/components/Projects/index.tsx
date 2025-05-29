@@ -56,7 +56,27 @@ export default function MyWork() {
         <div className="text-center">
           <Link
             href="/projects"
-            className="inline-flex items-center justify-center m-1 px-4 py-2 rounded-md border border-gray-700 bg-[#1a1a2e] hover:bg-[#2a2a40] transition text-sm"
+            className=" px-4
+            border-1
+     border-[#152a6b]
+      py-2
+      rounded-md
+      text-white
+      font-semibold
+      bg-gradient-to-r
+      from-[#081029]
+      via-[#0b1740]
+      to-[#152a6b]
+      shadow-md
+      hover:from-[#152a6b]
+      hover:via-[#0b1740]
+      hover:to-[#081029]
+      transition-colors
+      duration-300
+      ease-in-out
+      focus:outline-none
+      focus:ring-2
+      focus:ring-cyan-500"
           >
             VIEW ALL PROJECTS
           </Link>

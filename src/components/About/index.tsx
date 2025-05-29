@@ -55,7 +55,7 @@ const AboutSection = () => {
                 style={{ aspectRatio: "16 / 9" }}
               >
                 <iframe
-                  src="https://drive.google.com/file/d/1JVLPviTmCAS1Ri5duIqnVEPSH_7D8sck/preview"
+                  src="https://drive.google.com/file/d/1MdUJDLe7hl2uuAW3I7E9s1opeoIgowip/preview"
                   allow="autoplay"
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
                 ></iframe>
@@ -76,17 +76,22 @@ const AboutSection = () => {
                       </h3>
                     </div>
                     <p className="text-white text-base leading-relaxed">
-                      <span className="text-teal-500 font-medium">MERN</span>,{" "}
                       <span className="text-teal-500 font-medium">
                         TypeScript
                       </span>
-                      , <span className="text-teal-500 font-medium">Redux</span>
+                      , <span className="text-teal-500 font-medium">Node</span>,{" "}
+                      <span className="text-teal-500 font-medium">Express</span>
                       ,{" "}
-                      <span className="text-teal-500 font-medium">Next.js</span>
+                      <span className="text-teal-500 font-medium">MongoDB</span>
                       ,{" "}
                       <span className="text-teal-500 font-medium">
-                        Firebase
+                        Mongoose
                       </span>
+                      , <span className="text-teal-500 font-medium">React</span>
+                      , <span className="text-teal-500 font-medium">Redux</span>
+                      ,{" "}
+                      <span className="text-teal-500 font-medium">Next.Js</span>
+                      ,{" "}
                     </p>
                   </div>
 
